@@ -24,8 +24,8 @@ public class TestePersistirPais {
         EntityManager em = emf.createEntityManager();
         Pais p = new Pais();
 //        p.setId(2);
-        p.setNome("Dinamarca");
-        p.setIso("DINA");
+        p.setNome("teste");
+        p.setIso("teste");
         em.getTransaction().begin();
         em.persist(p);
         em.getTransaction().commit();
