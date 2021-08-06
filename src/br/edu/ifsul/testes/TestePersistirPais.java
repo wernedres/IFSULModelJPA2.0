@@ -19,17 +19,17 @@ public class TestePersistirPais {
      */
     public static void main(String[] args) {
 
-////        EntityManager em = EntityManagerUtil.getEntityManager();
-//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("IFSULModelPU");
-//        EntityManager em = emf.createEntityManager();
-//        Pais p = new Pais();
-////        p.setId(2);
-//        p.setNome("Colombia");
-//        p.setIso("COL");
-//        em.getTransaction().begin();
-//        em.persist(p);
-//        em.getTransaction().commit();
-//        em.close();
+//        EntityManager em = EntityManagerUtil.getEntityManager();
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("IFSULModelPU");
+        EntityManager em = emf.createEntityManager();
+        Pais p = new Pais();
+//        p.setId(2);
+        p.setNome("Colombia");
+        p.setIso("COL");
+        em.getTransaction().begin();
+        em.persist(p);
+        em.getTransaction().commit();
+        em.close();
     }
 
 }
